@@ -15,12 +15,12 @@ datasource db {
 }
 
 model User {
-    id           String         @id @default(uuid())
+    id           String        @id @default(uuid())
     name         String
-    email        String         @unique
+    email        String        @unique
     password     String
     Post         Post[]
-    refreshToken RefreshToken[]
+    refreshToken RefreshToken?
 }
 
 model Post {
@@ -36,5 +36,5 @@ model Post {
 model RefreshToken {
     tokenId String @id
     user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-    userId  String
+    userId  String @unique
 }

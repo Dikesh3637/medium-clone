@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "exports": {
-    "./user":"./src/user.ts"
+    "./user":"./src/user.ts",
+    "./auth":"./src/auth.ts"
   },
   "keywords": [],
   "author": "",
