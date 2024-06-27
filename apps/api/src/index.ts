@@ -1,5 +1,6 @@
 import { Hono } from 'hono'
 import { user } from './routes/user'
+import { post } from './routes/post'
 
 const app = new Hono()
 
@@ -8,5 +9,6 @@ app.get("/", async (c, next) => {
 })
 
 app.route("/api/v1/user", user)
+app.route("/api/v1/post", post)
 
 export default app

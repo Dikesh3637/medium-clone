@@ -9,8 +9,6 @@ import { v4 as uuidv4 } from "uuid"
 import { createAuthToken, createRefreshToken } from "../utils/jwtFunctions";
 import { CustomError } from "../error";
 
-
-
 export const user = new Hono<{
     Bindings: {
         DATABASE_URL: string,
