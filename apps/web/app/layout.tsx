@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import { Inter, Playfair_Display } from "next/font/google";
-
+import Provider from "@/providers/providers";
 
 import "./globals.css";
 
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     }
 };
 
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -34,7 +35,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${playFair.variable} ${inter.variable} ${NoeDisplay.variable} bg-[#F7F4ED]`}>{children}</body>
+            <body className={`${playFair.variable} ${inter.variable} ${NoeDisplay.variable} bg-[#F7F4ED]`}>
+                <Provider>
+                    {children}
+                </Provider>
+            </body>
         </html>
     );
 }
