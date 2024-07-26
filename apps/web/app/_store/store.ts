@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { JWTPayloadType } from "@repo/typing/auth";
+import { Block } from "@blocknote/core";
 
 interface SignUpFormState {
 	ToggleSignUp: boolean;
@@ -36,4 +37,17 @@ export const useUserStore = create<UserState>((set) => ({
 	setUserId: (userId: string) => set({ userId: userId }),
 	setUser: (user: JWTPayloadType) =>
 		set({ username: user.username, email: user.email, userId: user.id }),
+}));
+
+interface EditorState {
+	document: Block[];
+	documentId: string;
+	setDocument: (document: Block[]) => void;
+	setDocumentId: (documentId: string) => void;
+}
+export const useEditorStore = create<EditorState>((set) => ({
+	document: [],
+	documentId: "",
+	setDocument: (document: Block[]) => set({ document: document }),
+	setDocumentId: (documentId: string) => set({ documentId: documentId }),
 }));

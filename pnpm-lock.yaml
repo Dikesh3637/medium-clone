@@ -106,6 +106,9 @@ importers:
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
+      lockr:
+        specifier: 0.9.0-beta.2
+        version: 0.9.0-beta.2
       lucide-react:
         specifier: ^0.399.0
         version: 0.399.0(react@18.2.0)
@@ -130,6 +133,9 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.4(ts-node@10.9.1(@types/node@20.11.24)(typescript@5.3.3)))
+      uuid:
+        specifier: ^10.0.0
+        version: 10.0.0
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -149,6 +155,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.2.19
+      '@types/uuid':
+        specifier: ^10.0.0
+        version: 10.0.0
       eslint:
         specifier: ^8
         version: 8.57.0
@@ -2647,6 +2656,9 @@ packages:
   locate-path@6.0.0:
     resolution: {integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==}
     engines: {node: '>=10'}
+
+  lockr@0.9.0-beta.2:
+    resolution: {integrity: sha512-kxlAUIdLZ6pClbhlFQBjSC7fdytyk2Y2O+htfgFwegHhKOqrJ7krK1QZOe5yHPBxvvqXpMRE4zLTHkjhB3Be8Q==}
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
@@ -7074,6 +7086,8 @@ snapshots:
   locate-path@6.0.0:
     dependencies:
       p-locate: 5.0.0
+
+  lockr@0.9.0-beta.2: {}
 
   lodash.get@4.4.2: {}
 

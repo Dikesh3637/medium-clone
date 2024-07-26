@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import { Inter, Playfair_Display } from "next/font/google";
 import Provider from "@/providers/providers";
 import { Toaster } from "sonner";
-import { Navbar } from "./_components/navbar";
 
 import "./globals.css";
 
